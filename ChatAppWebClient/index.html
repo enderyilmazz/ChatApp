@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatiple" content="ie=edge">
+    <title>Chat App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="header">ChatApp - Web İstemci</div>
+        <div class="chat-list">
+            <div class="messagesText" id="messages"></div>
+            <div class="typingText" id="typing"></div>
+        </div>
+        <input class="senderTextBox" type="text" id="sender" placeholder="İsim">
+        <input class="messageTextBox" type="text" id="message" placeholder="Mesaj">
+        <button class="senderButton" id="submitBtn">Gonder</button>
+    </div>
+    <script src="chat.js" charset="utf-8"></script>
+  </body>
+</html>
